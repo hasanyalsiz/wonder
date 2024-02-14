@@ -608,6 +608,37 @@
     margin-right: -30px !important;
   }
 }
+@media (max-width: 400px) {
+  .text-show-result {
+    margin-left: 35px !important;
+  }
+  .section-catergory {
+    padding: 0 !important;
+    width: 90% !important;
+    margin-left: -10px !important;
+  }
+  .category-sidebar {
+    display: none !important;
+  }
+  .navbar-bottom {
+    display: flex !important;
+  }
+  .menu {
+    margin-right: -30px !important;
+  }
+  .category-title h5 {
+    margin-left: 45px !important;
+  }
+  .pagination-category {
+    margin-left: 35px !important;
+  }
+  .card-title a {
+    margin-left: -10px !important;
+  }
+  .card-title span {
+    font-size: 18px !important;
+  }
+}
 @media (max-width: 360px) {
   .text-show-result {
     margin-left: 35px !important;
