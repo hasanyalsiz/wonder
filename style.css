@@ -629,6 +629,12 @@
   .pagination-category {
     margin-left: 35px !important;
   }
+  .card-title a {
+    margin-left: -10px !important;
+  }
+  .card-title span {
+    font-size: 18px !important;
+  }
 }
 
 /* Geçersiz kılma stilini ekle */
