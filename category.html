@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- header  -->
+  <div class="text-xs nav-main text-white fw-semibold hidden md:block">
+    <div class="flex justify-between items-center h-30 bg-nav-top shadow-md bg-teal-500 w-full md:px-0 lg:px-100">
+      <!-- Sol Taraftaki Linkler -->
+      <div class="flex items-center">
+        <a href="#" class="text-gray-600 text-shop pe-2 ps-2 hover:text-gray-900 nav-link">SHOP</a>
+        <a href="#" class="text-gray-600 pe-2 ps-2 hover:text-gray-900 nav-link">BLOG</a>
+        <a href="#" class="text-gray-600 pe-2 ps-2 hover:text-gray-900 nav-link">ABOUT WONDERY</a>
+      </div>
+      <!-- Orta Kısımdaki Link -->
+      <div class="flex-grow flex justify-center">
+        <a href="#" class="text-gray-600 hover:text-gray-900 pe-2 ps-2 nav-link">HELP & CONTACT</a>
+      </div>
+      <!-- Sağ Taraftaki İkonlar -->
+      <div class="flex nav-right items-center bg-nav-right">
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-currency-dollar text-gray-100"></i>
+          <span class="text-gray-100">USD</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-basket3-fill text-gray-100"></i>
+          <span class="text-gray-100"><span>0</span> ITEMS $0.0000</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-house-door text-gray-100"></i>
+          <span class="text-gray-100">MY WORDERY</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div class="flex items-center text-my">
+          <a href="#" class="text-red-600 pe-4 ps-4 underline-none nav-link"><i
+              class="me-1 bi bi-heart-fill text-white"></i> MY WISHLIST</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- wordery logo bar start -->
+  <div class="main-nav-link">
+    <div class="logo-bar flex flex-wrap align-items-center justify-between w-full">
+      <div class="cursor-pointer">
+        <img class="logo mx-auto md:mb-3 mb-3" src="asset/won.png" alt="" />
+      </div>
+      <div class="search mt-3 md:mt-0 w-full md:w-auto">
+        <div class="relative mb-4 flex items-stretch">
+          <input type="search" class="block search-input relative px-4 py-[0.20rem] text-xs outline-none"
+            placeholder="Search by title, author, keyword, ISBN..." aria-label="Search"
+            aria-describedby="button-addon3" />
+
+          <!--Search button-->
+          <button class="relative flex align-items-center search-btn rounded-end-4 px-6 text-xs font-medium"
+            type="button" id="button-addon3" data-te-ripple-init>
+            <span>Search</span> <i class="bi bi-search ms-3 fw-bolder"></i>
+          </button>
+        </div>
+      </div>
+      <div class="logo-right-text mr-10">
+        <div class="flex flex-col items-center justify-center fw-bold">
+          <span>Free worldwide delivery</span>
+          <span>with every order</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-link-modal">
+      <ul class="flex">
+        <li class="mr-6">
+          <a class=" " href="#">Fiction <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Non-Fiction <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Chidren's & Young Adult <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Education <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Stationery & Gifts <i class="bi bi-chevron-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- wordery logo bar finish -->
+  <!--Shop media start-->
+  <div class="nav-shop-madia flex flex-wrap justify-between h-50">
+    <div class="flex items-center">
+      <div class="nav-link-shop">
+        <a class="hover:underline text-xm" href="#">
+          <i class="bi bi-house-fill text-xs"></i> Shop
+        </a>
+      </div>
+    </div>
+    <div class="g-sorciai-media">
+      <div class="social-media">
+        <a class="flex text-xs text-dark-emphasis justify-center align-items-center gap-2" href="#">SHARE
+
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-envelope-fill text-white"></i>
+          </div>
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-facebook text-white"></i>
+          </div>
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-twitter text-white"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Shop medya finish-->
+  <!-- header finish  -->
+  <!-- Category Body -->
+  <div class="section-catergory flex flex-col mt-10 ">
+    <!-- Category Title  -->
+    <div class="category-title">
+      <h5 class=" mb-5">
+        Showing results for
+        <a href="#">A Little Life</a>
+        <span class="fw-bold">2,080 items</span>
+      </h5>
+      <div class="pagination-category bg-gray-100 p-2 flex justify-between align-items-center">
+        <div class="view-by flex gap-1 align-items-center">
+          <span class="me-2">View by</span>
+          <div class="btn-group gap-1">
+            <button style="background-color: #1e7b78" type="button" class="btn btn-sm text-white rounded-0">
+              <i class="bi bi-grid-3x3-gap-fill"></i>
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary rounded-0">
+              <i class="bi bi-list-ul"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="results-per-page flex gap-2 justify-center align-items-center">
+          <span class="whitespace-nowrap text-sm flex-wrap w-full">Results per page</span>
+          <select class="form-select rounded-0">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+
+        <div class="page-number lg:w-48 flex justify-content-around">
+          <i class="bi bi-chevron-compact-left me-2 text-xl text-gray-400 cursor-pointer"></i>
+          <span>Page </span>
+          <input class="text-center border-2" type="number" value="1" min="1" max="41" />
+          <span> of 41</span>
+          <i class="bi bi-chevron-compact-right ms-2 text-xl cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-gray-400 mt-4">Show results for:</h6>
+    </div>
+    <!-- Category Section  -->
+    <div class="category-body mt-2 mb-10 flex">
+      <!-- Category Sidebar  -->
+      <div style="width: 25%; height: auto" class="category-sidebar flex flex-col justify-start items-start">
+        <div style="padding: 20px 65px 20px 20px; font-size: 14px" class="gap-2 bg-gray-100 flex flex-col">
+          <a class="underline-none hover:underline text-gray-800" href="#">Fiction (336)</a>
+          <a class="underline-none hover:underline text-gray-800" href="#">Stationery & Gifts (52)</a>
+          <a class="underline-none hover:underline text-gray-800" href="#">Children's & Young Adult (276)</a>
+          <a class="underline-none hover:underline text-gray-800" href="#">Education (55)</a>
+          <a class="underline-none hover:underline text-gray-800" href="#">Non-Fiction (1568)</a>
+        </div>
+        <div>
+          <h6 class="text-gray-400 mt-3 mb-3">Filter By:</h6>
+        </div>
+        <div>
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-32 gap-44 mb-2">
+            <h6 class="fw-bold">Availability</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10" type="checkbox" id="check-all" />
+              <label for="check-all">Ready To Go</label>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 author">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-40 gap-52 mb-2">
+            <h6 class="fw-bold">Author</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Anonymous (378)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Sans Auteur (257)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Unknown (100)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Scott C. Stevenson (50)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">William Irwin (49)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Charles Scribners Sons (44)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Frank J. Fabozzi (40)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Zygmunt Bauman (39)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Jack London (35)</label>
+            </div>
+
+          </div>
+        </div>
+        <div class="mt-4 age-group">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-36 gap-44 mb-2">
+            <h6 class="fw-bold whitespace-nowrap">Age Group</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Babies (19)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Toddlers (19)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">3-5 years (56)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">6-8 years (96)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">9-12 years (105)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">13+ years (101)</label>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="mt-4 publish-date">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-24 gap-36 mb-2">
+            <h6 class="fw-bold whitespace-nowrap">Publication Date</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Over a year ago (1899)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Within the last year (176)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Within the last 3 months (51)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Within the last month (23)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Coming soon (3)</label>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="mt-4 formats">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-40 gap-52 mb-2">
+            <h6 class="fw-bold">Formats</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Paperback (1425)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Hardback (587)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Baby (40)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Audio (18)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Stationery (6)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Large Print (3)</label>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="mt-4 languages">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-36 gap-48 mb-2">
+            <h6 class="fw-bold">Languages</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">English (1969)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">German (4)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Spanish (3)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Chinese (1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Dutch; Flemish (1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">French (1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Multiple languages (1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Ukrainian (1)</label>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="mt-4 series">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-44 gap-56 mb-2">
+            <h6 class="fw-bold">Series</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Re: Zero Starting(32)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">The Little Book Of... (11)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Little Ways To Live (10)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">No Game No Life (10)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">
+                Happy Sugar Life (9)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Virago Modern Classics (8)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Big Life Lessons For Little Kids (7)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">
+                Brief Histories (5)</label>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="mt-4 publisher">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-36 gap-48 mb-2">
+            <h6 class="fw-bold">Publisher</h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">Marshall Cavendish(8)</label>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div class="mt-4 rating">
+          <div style="width: 100%; height: 35px" class="left-title flex lg:gap-40 gap-52 mb-2">
+            <h6 class="fw-bold p-1">Rating </h6>
+            <i class="bi bi-plus-lg plus text-white"></i>
+          </div>
+          <div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all">All</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all"><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1  text-green-600"></i>(1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all"><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i class="bi bi-star-fill me-1  text-gray-200"></i>&
+                up(1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all"><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-gray-200"></i><i class="bi bi-star-fill me-1  text-gray-200"></i>&
+                up(1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all"><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill me-1 text-green-600"></i><i class="bi bi-star-fill me-1 text-gray-200"></i><i
+                  class="bi bi-star-fill me-1 text-gray-200"></i><i class="bi bi-star-fill me-1  text-gray-200"></i>&
+                up(1)</label>
+            </div>
+            <div class="checkbox-container">
+              <input class="h-6 w-10 mb-2" type="checkbox" id="check-all" />
+              <label for="check-all"><i class="bi bi-star-fill me-1 text-green-600"></i><i
+                  class="bi bi-star-fill  me-1 text-gray-200"></i><i class="bi bi-star-fill  me-1 text-gray-200"></i><i
+                  class="bi bi-star-fill  me-1 text-gray-200"></i><i class="bi bi-star-fill  me-1  text-gray-200"></i>&
+                up(1)</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Category Cards  -->
+      <div class="category-cards">
+        <div class="cards mt-0 flex flex-wrap justify-content-around gap-4">
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <a href="detail.html"><img class="card-img-top"
+                src="asset/each-peach-pear-plum-pocket-puffin-janet-ahlberg-9780141502526.jpg"
+                alt="Card image cap" /></a>
+            <div class="card-body text-center">
+              <a href="detail.html" class="card-title underline-none hover:underline fw-bold">Each Peach Pear Plum</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Janet Ahlberg</a>
+
+              <div class="mt-2">
+                <i class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+                  class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+                  class="bi bi-star"></i>
+              </div>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/you-are-special-max-lucado-9781859855454.jpg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">You are Special
+              </a>
+              <p class="text-xs mt-2">(English, Board book)</p>
+              <a class="text-xs underline-none hover:underline">Max Lucado, Sergio Martinez</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/q-christina-dalcher-9780008440602.jpg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">I'm a New Big Brother</a>
+              <p class="text-xs mt-2">(English,Paperback)</p>
+              <a class="text-xs underline-none hover:underline mb-2"></a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/oh-the-places-youll-go-dr-seuss-9780007413577.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Oh, The Places You'll Go!</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Dr. Seuss</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top"
+              src="asset/yes-no-a-first-conversation-about-consent-megan-madison-9780593383322.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Yes! No!</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Megan Madison, Jessica Ralli</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/tabby-mctat-early-reader-julia-donaldson-9781407136271.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Tabby McTat (Early Reader)</a>
+              <p class="text-xs">(English, Board book)</p>
+              <a class="text-xs underline-none hover:underline">Julia Donaldson, Axel Scheffler</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/second-first-impressions-sally-thorne-9780349428932.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Second First Impressions</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Sally Thorne</a>
+
+              <div class="mt-2">
+                <i class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+                  class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+                  class="bi bi-star"></i>
+              </div>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/the-beautiful-ones-silvia-moreno-garcia-9781529416145.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Cozy Witch Tarot Deck and Guidebook
+              </a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Silvia Moreno-Garcia</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/q-christina-dalcher-9780008440602.jpg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Q</a>
+              <p class="text-xs mt-3">(English,Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Christina Dalcher</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/little-fires-everywhere-celeste-ng-9780349144337.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Little Fires Everywhere</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Celeste Ng</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/cruel-crown-victoria-aveyard-9781409165330.jpg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Cruel Crown</a>
+              <p class="text-xs">(English, Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Victoria Aveyard</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/verity-special-collectors-edition-colleen-hoover-9781408727034.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Verity</a>
+              <p class="text-xs">(English, Board book)</p>
+              <a class="text-xs underline-none hover:underline">Colleen Hoover</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/inner-child-oracle-amanda-lynn-aisling-9781401973773.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Inner Child Oracle</a>
+              <p class="text-xs">(English, Copymasters)</p>
+              <a class="text-xs underline-none hover:underline">Amanda Lynn Aisling</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/cozy-witch-tarot-deck-and-guidebook-amanda-lovelace-9781524871291.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Cozy Witch Tarot Deck and Guidebook
+              </a>
+              <p class="text-xs">(English)</p>
+              <a class="text-xs underline-none hover:underline">Amanda Lovelace</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/two-twisted-crowns-rachel-gillig-9780356519500.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Two Twisted Crowns</a>
+              <p class="text-xs mt-3">(English,Paperback)</p>
+              <a class="text-xs underline-none hover:underline">Rachel Gillig</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/nicoletta-ceccoli-tarot-nicoletta-ceccoli-9788865273050.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Nicoletta Ceccoli Tarot</a>
+              <p class="text-xs">(English, Cards)</p>
+              <a class="text-xs underline-none hover:underline">Nicoletta Ceccoli</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/tarot-of-sexual-magic-laura-tuan-9788883958823.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Tarot of Sexual Magic</a>
+              <p class="text-xs">(English,Cards)</p>
+              <a class="text-xs underline-none hover:underline">Laura Tuan, Mauro De Luca</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/skincare-caroline-hirons-9780008375522.jpg" alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Sacred Forest Oracle</a>
+              <p class="text-xs">(English,Cards)</p>
+              <a class="text-xs underline-none hover:underline">Denise Linn</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span><br />
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top"
+              src="asset/bored-of-lunch-healthy-slow-cooker-even-easier-nathan-anthony-9781529914474.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fw-bold">Bored of Lunch</a>
+              <p class="text-xs mt-3">(English, Hardback)</p>
+              <a class="text-xs underline-none hover:underline">Nathan Anthony</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+          <div class="card flex border-0 justify-content-center align-items-center">
+            <img class="card-img-top" src="asset/house-of-flame-and-shadow-sarah-j-maas-9781408884447.jpg"
+              alt="Card image cap" />
+            <div class="card-body text-center">
+              <a class="card-title underline-none hover:underline fs-6 fw-bold">House of Flame</a>
+              <p class="text-xs mt-3">(English, Hardback)</p>
+              <a class="text-xs underline-none hover:underline">Sarah J. Maas</a>
+
+              <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+                <span>Currently</span>
+                <span>Unavailable</span>
+              </div>
+              <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination (search result) -->
+        <div class="pagination-category ms-4 bg-gray-100 p-2 flex justify-between align-items-center">
+          <div class="view-by flex gap-1 align-items-center">
+            <span class="me-2">View by</span>
+            <div class="btn-group gap-1">
+              <button style="background-color: #1e7b78" type="button" class="btn btn-sm text-white rounded-0">
+                <i class="bi bi-grid-3x3-gap-fill"></i>
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-secondary rounded-0">
+                <i class="bi bi-list-ul"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="results-per-page flex gap-2 justify-center align-items-center">
+            <span class="whitespace-nowrap text-sm flex-wrap w-full">Results per page</span>
+            <select class="form-select rounded-0">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+
+          <div class="page-number lg:w-48 flex justify-content-around ">
+            <i class="bi bi-chevron-compact-left me-2 text-xl text-gray-400 cursor-pointer"></i>
+            <span>Page </span>
+            <input class="text-center border-2" type="number" value="1" min="1" max="41" />
+            <span> of 41</span>
+            <i class="bi bi-chevron-compact-right ms-2 text-xl cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer  -->
+  <div class="footer hidden sm:block bg-gray-100 w-full shadow" style="padding: 0 140px 0 140px">
+    <div class="footer-top flex align-items-center justify-content-between">
+      <div class="flex gap-12">
+        <p>You are not currently signed in.</p>
+        <a class="underline-none hover:underline fw-bold text-blue-300" href="">Sign in</a>
+      </div>
+
+      <div class="footer-search md">
+        <div class="search mt-3">
+          <div class="relative mb-4 flex items-stretch">
+            <input type="search" class="block search-input relative px-4 py-[0.20rem] text-xs font-normal outline-none"
+              placeholder="Search by title, author, keyword, ISBN..." aria-label="Search"
+              aria-describedby="button-addon3" />
+
+            <!--Search button-->
+            <button class="relative search-btn rounded-end-4 px-6 text-xs font-medium" type="button" id="button-addon3"
+              data-te-ripple-init>
+              Search <i class="bi bi-search ms-3 fw-bolder"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h5>QUICK FINDER</h5>
+    </div>
+    <div class="footer-bottom">
+      <div class="py-16 xl:px-20 lg:px-12 sm:px-6 px-1">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 md:gap-4 gap-1">
+          <div class="flex flex-col flex-shrink-0">
+            <div class="flex flex-col">
+              <h6 class="mb-4">SHOP</h6>
+              <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">New Releases</a>
+              <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Reviews</a>
+              <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Bestsellers</a>
+              <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Basket</a>
+              <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Site Map</a>
+              <h6 class="mt-4">FOLLOW WOMDERY</h6>
+            </div>
+
+            <div class="social-media mt-2">
+              <a class="flex text-xs text-dark-emphasis justify-start align-items-center gap-2" href="#">
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                  <i class="bi bi-envelope-fill text-white"></i>
+                </div>
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                  <i class="bi bi-facebook text-white"></i>
+                </div>
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                  <i class="bi bi-twitter text-white"></i>
+                </div>
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                  <i class="bi bi-youtube text-white"></i>
+                </div>
+                <div
+                  class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                  <i class="bi bi-pinterest text-white"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="sm:ml-0 ml-8 flex flex-col">
+            <h2 class="text-base mb-4 font-semibold leading-4 text-gray-800 dark:text-white">
+              ABOUT WORDERY
+            </h2>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Our Story</a>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">FAQ</a>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Testimonials
+            </a>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Modersn Slavery
+              Statement
+            </a>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Gender Pay Gap
+              Report</a>
+            <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Business
+              Services</a>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="text-base font-semibold leading-4 text-gray-800 dark:text-white mb-4">
+              HELP & CONTACT
+            </h2>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Delivery</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Term of Use</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Term of Sale</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Returns</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Privacy</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Cookies</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Cookies Setting</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Push
+              Noticifications</a>
+            <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Contact Us</a>
+          </div>
+          <div class="flex flex-col">
+            <h6 class="mb-4">MY WORDERY</h6>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Settings</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Addresses</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Orders</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Payment Options</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Badges</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Wishlist</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">My Reviews</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">Register</a>
+            <a class="cursor-pointer underline-none text-gray-500 text-sm">Forgetten Password</a>
+          </div>
+
+          <div>
+            <h4 class="text-sm mb-4">
+              RECEIVE NEWS, UPDATES AND SPECIAL OFFERS.
+            </h4>
+
+            <label for="email" class="text-sm mb-2 block">Enter your email address here:</label>
+            <input type="text" id="email" class="h-10 p-2 border border-gray-300 mb-4 w-full" />
+
+            <div class="mb-2">
+              <label for="config1" class="flex mb-4 cursor-pointer">
+                <input type="checkbox" id="config1" class="mr-2 hover:opacity-50 transform scale-150" />
+                <span class="hover:opacity-50 text-xs">I confirm I would like to receive emails from
+                  wordery.com</span>
+              </label>
+
+              <label for="config2" class="flex mb-4 items-center cursor-pointer">
+                <input type="checkbox" id="config2" class="mr-2 hover:opacity-50 transform scale-150" />
+                <span class="hover:opacity-50 text-xs">I agree to terms & conditions</span>
+              </label>
+            </div>
+
+            <button style="background-color: #1d7673; border-radius: 30px" class="text-white py-2 px-4 w-full">
+              Subscribe
+            </button>
+
+            <p class="text-xs mt-2">
+              <a class="text-blu-200 underline-none hover:underline cursor-pointer">Click here to see our Ts & Cs</a>
+              and our promise to protect your data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- navbar bottom   -->
+  <div class="navbar-bottom">
+    <div class="menu">
+      <i class="bi bi-list"></i>
+      <span>Menu</span>
+    </div>
+    <div class="search">
+      <i class="bi bi-search"></i>
+      <span>Search</span>
+    </div>
+    <div class="basket">
+      <i class="bi bi-basket2"></i>
+      <span>Basket</span>
+    </div>
+    <div class="home">
+      <i class="bi bi-house"></i>
+      <span>Wordery</span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

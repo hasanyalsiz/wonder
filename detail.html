@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- header  -->
+  <div class="text-xs nav-main text-white fw-semibold hidden md:block">
+    <div class="flex justify-between items-center h-30 bg-nav-top shadow-md bg-teal-500 w-full md:px-0 lg:px-100">
+      <!-- Sol Taraftaki Linkler -->
+      <div class="flex items-center">
+        <a href="#" class="text-gray-600 text-shop pe-2 ps-2 hover:text-gray-900 nav-link">SHOP</a>
+        <a href="#" class="text-gray-600 pe-2 ps-2 hover:text-gray-900 nav-link">BLOG</a>
+        <a href="#" class="text-gray-600 pe-2 ps-2 hover:text-gray-900 nav-link">ABOUT WONDERY</a>
+      </div>
+      <!-- Orta Kısımdaki Link -->
+      <div class="flex-grow flex justify-center">
+        <a href="#" class="text-gray-600 hover:text-gray-900 pe-2 ps-2 nav-link">HELP & CONTACT</a>
+      </div>
+      <!-- Sağ Taraftaki İkonlar -->
+      <div class="flex nav-right items-center bg-nav-right">
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-currency-dollar text-gray-100"></i>
+          <span class="text-gray-100">USD</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-basket3-fill text-gray-100"></i>
+          <span class="text-gray-100"><span>0</span> ITEMS $0.0000</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="flex pe-4 ps-4 items-center space-x-1">
+          <i class="bi bi-house-door text-gray-100"></i>
+          <span class="text-gray-100">MY WORDERY</span>
+          <i class="bi bi-chevron-down"></i>
+        </div>
+
+        <div class="flex items-center text-my">
+          <a href="#" class="text-red-600 pe-4 ps-4 underline-none nav-link"><i
+              class="me-1 bi bi-heart-fill text-white"></i> MY WISHLIST</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- wordery logo bar start -->
+  <div class="main-nav-link">
+    <div class="logo-bar flex flex-wrap align-items-center justify-between w-full">
+      <div class="cursor-pointer">
+        <img class="logo mx-auto md:mb-3 mb-3" src="asset/won.png" alt="" />
+      </div>
+      <div class="search mt-3 md:mt-0 w-full md:w-auto">
+        <div class="relative mb-4 flex items-stretch">
+          <input type="search" class="block search-input relative px-4 py-[0.20rem] text-xs outline-none"
+            placeholder="Search by title, author, keyword, ISBN..." aria-label="Search"
+            aria-describedby="button-addon3" />
+
+          <!--Search button-->
+          <button class="relative flex align-items-center search-btn rounded-end-4 px-6 text-xs font-medium"
+            type="button" id="button-addon3" data-te-ripple-init>
+            <span>Search</span> <i class="bi bi-search ms-3 fw-bolder"></i>
+          </button>
+        </div>
+      </div>
+      <div class="logo-right-text mr-10">
+        <div class="flex flex-col items-center justify-center fw-bold">
+          <span>Free worldwide delivery</span>
+          <span>with every order</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-link-modal">
+      <ul class="flex">
+        <li class="mr-6">
+          <a class=" " href="#">Fiction <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Non-Fiction <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Chidren's & Young Adult <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Education <i class="bi bi-chevron-down"></i></a>
+        </li>
+        <li class="mr-6">
+          <a class=" " href="#">Stationery & Gifts <i class="bi bi-chevron-down"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- wordery logo bar finish -->
+  <!--Shop media start-->
+  <div class="nav-shop-madia flex flex-wrap justify-between h-50">
+    <div class="flex items-center">
+      <div class="nav-link-shop">
+        <a class="hover:underline text-xm" href="#">
+          <i class="bi bi-house-fill text-xs"></i> Shop
+        </a>
+      </div>
+    </div>
+    <div class="g-sorciai-media">
+      <div class="social-media">
+        <a class="flex text-xs text-dark-emphasis justify-center align-items-center gap-2" href="#">SHARE
+
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-envelope-fill text-white"></i>
+          </div>
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-facebook text-white"></i>
+          </div>
+          <div
+            class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+            <i class="bi bi-twitter text-white"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--Shop medya finish-->
+  <!-- header finish  -->
+  
+  <!-- Section Detail  -->
+  <div style="width: 90%; margin: auto; padding: 0 100px" class="section-detail mb-10 flex gap-40">
+    <!-- Detail Header  -->
+    <div style="width: 80%" class="detail-left p-2">
+      <div class="detail-title">
+        <h2>One Life: The True Story of Sir Nicholas Winton</h2>
+        <p class="text-xs">
+          A Paperback edition by
+          <span class="text-blue-600">Barbara Winton</span> in English (30 Nov
+          2023)
+        </p>
+      </div>
+      <!-- Detail Cards  -->
+      <div class="detail-card">
+        <div class="flex flex-col gap-2 md:flex-row md:max-w-xl">
+          <img style="height: 400px; width: 250px"
+            class="detail-card-img me-2 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
+            src="asset/one-life-barbara-winton-9781472148667.jpg" alt="" />
+          <div class="img-left flex flex-col mb-2 justify-between p-4 leading-normal">
+            <div style="width: 350px"
+              class="mb-2 flex gap-4 flex-col justify-between text-lg font-bold tracking-tight text-gray-900 dark:text-white underline-none">
+              <div class="mobil-title">
+                <p class="text-red-400 text-xm">
+                  Sorry, this is currently unavailable.<span class="text-blue-500">Find out why here.</span>
+                </p>
+                <p id="mobil-p" class="mb-3 text-xs text-gray-700 dark:text-gray-400">
+                  Please click below and we will notify you when it is back in
+                  stock.
+                </p>
+              </div>
+
+              <div class="notify-main flex justify-around">
+                <button id="notify-btn" style="
+                      background-color: #1d7673;
+                      border-radius: 30px;
+                      height: 40px;
+                    " class="notify-btn gap-6 py-2 px-4 flex align-items-center text-center">
+                  <i class="bi bi-envelope-fill text-white"></i>
+                  <a href="#" class="text-white text-xs fw-bold underline-none">Notify Me</a>
+                </button>
+                <div class="flex gap-2 align-items-center justify-content-center text-center">
+                  <i class="bi bi-heart-fill text-red-500 mb-1"></i>
+                  <p class="text-xs mt-2 cursor-pointer hover:underline">
+                    Add to wishlist
+                  </p>
+                </div>
+              </div>
+              <div>
+                <h6 id="notif-h" style="font-size: 12px">
+                  Short Description: The book that inspired major motion
+                  picture ONE LIFE , starring Sir Anthony Hopkins and Helena
+                  Bonham Carter.... Read more
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Detail Right Banner  -->
+    <div style="width: 30%" class="detail-right mt-4 flex-col justify-center align-items-center gap-8">
+      <div class="bg-dark-subtle text-2xl text-center p-3">
+        <i class="bi bi-star-fill me-2 text-green-600"></i><i class="bi bi-star-fill me-2 text-green-600"></i><i
+          class="bi bi-star-fill me-2 text-green-600"></i><i class="bi bi-star-fill me-2 text-green-600"></i><i
+          class="bi bi-star-fill me-2 text-green-600"></i>
+      </div>
+      <div class="bg-gray-400 text-center p-3">
+        <span>4.70Average</span><br />
+        <span>83741Reviews</span>
+      </div>
+      <div class="bg-dark-subtle flex text-center justify-center p-3 text-center">
+        <i class="bi bi-star-fill"></i>
+        <h5>REVIEWS</h5>
+        <p>.io</p>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion Section  -->
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Product Description
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>
+            The book that inspired major motion picture ONE LIFE, starring Sir
+            Anthony Hopkins and Helena Bonham Carter. <br /><br />
+
+            'Remarkable' - Guardian<br /><br />
+
+            Sir Nicholas Winton rescued 669 children from Nazi-occupied
+            Czechoslovakia at the brink of World War II. Most never saw their
+            parents again; nearly all left behind were murdered. This is his
+            story.<br /><br />
+
+            In 1938, 29-year-old 'Nicky' cancelled a ski holiday and instead
+            spent nine months masterminding a seemingly impossible plan to
+            rescue hundreds of Jewish children and find them homes in the UK.
+            Over 6,000 people are alive today because of his efforts.<br /><br />
+
+            What motivated an ordinary man to do something so extraordinary?
+            This book, written by his daughter, Barbara, explores the 106-year
+            life of an incredible humanitarian, a man whose legacy only came
+            to public light decades later.<br /><br />
+
+            His life story is a clarion call to choose action over apathy in
+            the face of injustice, and a reminder that every one of us can
+            change the world.<br />
+
+            'If something is not impossible, then there must be a way to do
+            it.'<br /><br />
+
+            'Those of us who came on a Kindertransport from Prague and owe our
+            lives to Nicky will be so grateful to Barbara for writing
+            something so special' - Lord Alf Dubs, ex-Labour minister and
+            'rescued child'<br /><br />
+
+            [This book was first published in 2014 as If It's Not
+            Impossible... The Life of Sir Nicholas Winton]<br />
+
+            One Life Paperback edition by Barbara Winton
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Product Details
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div style="padding: 0 40px 0 40px" class="flex flex-col">
+            <h2 class="pt-8 text-2xl text-green-800 font-semibold leading-4 mb-4">
+              Product Details
+            </h2>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Author:
+              <a href="#" class="text-blue-600 underline-none hover:underline">Barbara Winton</a>
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              ISBN-13: 9781472148667
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              ISBN-10: 1472148665
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Format: Paperback
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Publisher: Little,
+              <a href="#" class="text-blue-600 underline-none hover:underline">Brown Book Group</a>
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Publication date: 30 Nov 2023
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Product dimensions: 126 x 197 x 21mm
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Weight: 242g
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Condition: New
+            </p>
+            <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+              Language: English
+            </p>
+            <h4 class="text-lg mt-3">Categories</h4>
+            <a href="#" class="underline-none">
+              Non-Fiction > Games > Indoor Games Non-Fiction > Natural World
+              <br />
+              > Wildlife: General Interest <br />
+              > Wildlife: Butterflies, Other Insects & Spiders
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Write a Review
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="bg-dark-subtle text-2xl text-center p-3">
+            <i class="bi bi-star-fill me-2 text-green-600"></i><i class="bi bi-star-fill me-2 text-green-600"></i><i
+              class="bi bi-star-fill me-2 text-green-600"></i><i class="bi bi-star-fill me-2 text-green-600"></i><i
+              class="bi bi-star-fill me-2 text-green-600"></i>
+          </div>
+          <div class="bg-gray-400 text-center p-3">
+            <span>4.70Average</span><br />
+            <span>83741Reviews</span>
+          </div>
+          <div class="bg-dark-subtle flex text-center justify-center p-3 text-center">
+            <i class="bi bi-star-fill"></i>
+            <h5>REVIEWS</h5>
+            <p>.io</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Detail Description  -->
+  <div style="width: 90%; margin: auto; padding: 0 100px" class="detail-desc flex">
+    <div style="background-color: rgb(35, 144, 140)" class="border border-1 p-3">
+      <a href="#" class="underline-none hover:underline text-white">Product Description & Details</a>
+    </div>
+    <div class="border border-1 p-3">
+      <a href="#" class="underline-none hover:underline text-gray-700">Review this book</a>
+    </div>
+  </div>
+  <hr class="hr-detail mt-0" />
+  <!-- Detail Description Bottom  -->
+  <div style="width: 90%; margin: auto; padding: 0 100px" class="des-detail flex gap-28">
+    <div style="width: 70%; line-height: 2.5">
+      <h1 class="text-green-700">Product Description</h1>
+      <p style="font-size: 14px">
+        The book that inspired major motion picture ONE LIFE, starring Sir
+        Anthony Hopkins and Helena Bonham Carter.
+        <br />
+
+        'Remarkable' - Guardian<br />
+
+        Sir Nicholas Winton rescued 669 children from Nazi-occupied
+        Czechoslovakia at the brink of World War II. Most never saw their
+        parents again; nearly all left behind were murdered. This is his
+        story.<br />
+
+        In 1938, 29-year-old 'Nicky' cancelled a ski holiday and instead spent
+        nine months masterminding a seemingly impossible plan to rescue
+        hundreds of Jewish children and find them homes in the UK. Over 6,000
+        people are alive today because of his efforts.<br />
+
+        What motivated an ordinary man to do something so extraordinary? This
+        book, written by his daughter, Barbara, explores the 106-year life of
+        an incredible humanitarian, a man whose legacy only came to public
+        light decades later.<br />
+
+        His life story is a clarion call to choose action over apathy in the
+        face of injustice, and a reminder that every one of us can change the
+        world.<br />
+
+        'If something is not impossible, then there must be a way to do
+        it.'<br />
+
+        'Those of us who came on a Kindertransport from Prague and owe our
+        lives to Nicky will be so grateful to Barbara for writing something so
+        special' - Lord Alf Dubs, ex-Labour minister and 'rescued child' [This
+        book was first published in 2014 as If It's Not Impossible... The Life
+        of Sir Nicholas Winton]<br />
+
+        One Life Paperback edition by Barbara Winton
+      </p>
+    </div>
+    <div style="width: 30%; padding-bottom: 50px" class="border border-1 bg-gray-200">
+      <div style="padding: 0 40px 0 40px" class="flex flex-col">
+        <h2 class="pt-8 text-2xl text-green-800 font-semibold leading-4 mb-4">
+          Product Details
+        </h2>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Author:
+          <a href="#" class="text-blue-600 underline-none hover:underline">Barbara Winton</a>
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          ISBN-13: 9781472148667
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          ISBN-10: 1472148665
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Format: Paperback
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Publisher: Little,
+          <a href="#" class="text-blue-600 underline-none hover:underline">Brown Book Group</a>
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Publication date: 30 Nov 2023
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Product dimensions: 126 x 197 x 21mm
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Weight: 242g
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Condition: New
+        </p>
+        <p class="text-sm leading-4 text-gray-900 underline-none hover:underline cursor-pointer">
+          Language: English
+        </p>
+        <h4 class="text-lg mt-3">Categories</h4>
+        <a href="#" class="underline-none">
+          Non-Fiction > Games > Indoor Games Non-Fiction > Natural World
+          <br />
+          > Wildlife: General Interest <br />
+          > Wildlife: Butterflies, Other Insects & Spiders
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr class="hr-detail mt-5" />
+  <!-- Detail Cards Bottom  -->
+  <div style="width: 90%; margin: auto; padding: 0 100px" class="section-card-mbl flex-column">
+    <div class="card-title m-4">
+      <span id="det-tit" class="fw-bold">Other books you might like </span>
+    </div>
+    <div class="cards mt-5 flex flex-wrap justify-content-start ms-5 gap-8">
+      <div class="card flex border-0 justify-content-center align-items-center">
+        <img class="card-img-top" src="asset/one-life-barbara-winton-9781472148667.jpg" alt="Card image cap" />
+        <div class="card-body text-center">
+          <a class="card-title underline-none hover:underline fw-bold">One Life</a>
+          <p class="text-xs mt-3">(English, Game)</p>
+          <a class="text-xs underline-none hover:underline">Christine Berrie</a>
+          <div class="mt-3">
+            <i class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+              class="bi bi-star-fill text-green-500"></i><i class="bi bi-star-fill text-green-500"></i><i
+              class="bi bi-star"></i>
+          </div>
+          <div class="flex-column align-items-center justify-content-center text-xm mt-2">
+            <span>Currently</span>
+            <span>Unavailable</span>
+          </div>
+          <a class="text-xs underline-none hover:underline">Why is this unavailable?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer  -->
+    <div class="footer hidden sm:block bg-gray-100 w-full shadow" style="padding: 0 140px 0 140px">
+      <div class="footer-top flex align-items-center justify-content-between">
+        <div class="flex gap-12">
+          <p>You are not currently signed in.</p>
+          <a class="underline-none hover:underline fw-bold text-blue-300" href="">Sign in</a>
+        </div>
+  
+        <div class="footer-search md">
+          <div class="search mt-3">
+            <div class="relative mb-4 flex items-stretch">
+              <input type="search" class="block search-input relative px-4 py-[0.20rem] text-xs font-normal outline-none"
+                placeholder="Search by title, author, keyword, ISBN..." aria-label="Search"
+                aria-describedby="button-addon3" />
+  
+              <!--Search button-->
+              <button class="relative search-btn rounded-end-4 px-6 text-xs font-medium" type="button" id="button-addon3"
+                data-te-ripple-init>
+                Search <i class="bi bi-search ms-3 fw-bolder"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h5>QUICK FINDER</h5>
+      </div>
+      <div class="footer-bottom">
+        <div class="py-16 xl:px-20 lg:px-12 sm:px-6 px-1">
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 md:gap-4 gap-1">
+            <div class="flex flex-col flex-shrink-0">
+              <div class="flex flex-col">
+                <h6 class="mb-4">SHOP</h6>
+                <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">New Releases</a>
+                <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Reviews</a>
+                <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Bestsellers</a>
+                <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Basket</a>
+                <a href="#" class="cursor-pointer underline-none text-gray-500 text-sm">Site Map</a>
+                <h6 class="mt-4">FOLLOW WOMDERY</h6>
+              </div>
+  
+              <div class="social-media mt-2">
+                <a class="flex text-xs text-dark-emphasis justify-start align-items-center gap-2" href="#">
+                  <div
+                    class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                    <i class="bi bi-envelope-fill text-white"></i>
+                  </div>
+                  <div
+                    class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                    <i class="bi bi-facebook text-white"></i>
+                  </div>
+                  <div
+                    class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                    <i class="bi bi-twitter text-white"></i>
+                  </div>
+                  <div
+                    class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                    <i class="bi bi-youtube text-white"></i>
+                  </div>
+                  <div
+                    class="w-6 h-6 rounded-full flex items-center justify-center transition-transform transform hover:scale-120">
+                    <i class="bi bi-pinterest text-white"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="sm:ml-0 ml-8 flex flex-col">
+              <h2 class="text-base mb-4 font-semibold leading-4 text-gray-800 dark:text-white">
+                ABOUT WORDERY
+              </h2>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Our Story</a>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">FAQ</a>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Testimonials
+              </a>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Modersn Slavery
+                Statement
+              </a>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Gender Pay Gap
+                Report</a>
+              <a class="text-sm underline-none hover:underline leading-4 text-gray-500 cursor-pointer">Business
+                Services</a>
+            </div>
+            <div class="flex flex-col">
+              <h2 class="text-base font-semibold leading-4 text-gray-800 dark:text-white mb-4">
+                HELP & CONTACT
+              </h2>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Delivery</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Term of Use</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Term of Sale</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Returns</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Privacy</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Cookies</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Cookies Setting</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Push
+                Noticifications</a>
+              <a class="text-sm leading-4 text-gray-500 underline-none hover:underline cursor-pointer">Contact Us</a>
+            </div>
+            <div class="flex flex-col">
+              <h6 class="mb-4">MY WORDERY</h6>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Settings</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Addresses</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Orders</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Payment Options</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Badges</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Wishlist</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">My Reviews</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">Register</a>
+              <a class="cursor-pointer underline-none text-gray-500 text-sm">Forgetten Password</a>
+            </div>
+  
+            <div>
+              <h4 class="text-sm mb-4">
+                RECEIVE NEWS, UPDATES AND SPECIAL OFFERS.
+              </h4>
+  
+              <label for="email" class="text-sm mb-2 block">Enter your email address here:</label>
+              <input type="text" id="email" class="h-10 p-2 border border-gray-300 mb-4 w-full" />
+  
+              <div class="mb-2">
+                <label for="config1" class="flex mb-4 cursor-pointer">
+                  <input type="checkbox" id="config1" class="mr-2 hover:opacity-50 transform scale-150" />
+                  <span class="hover:opacity-50 text-xs">I confirm I would like to receive emails from
+                    wordery.com</span>
+                </label>
+  
+                <label for="config2" class="flex mb-4 items-center cursor-pointer">
+                  <input type="checkbox" id="config2" class="mr-2 hover:opacity-50 transform scale-150" />
+                  <span class="hover:opacity-50 text-xs">I agree to terms & conditions</span>
+                </label>
+              </div>
+  
+              <button style="background-color: #1d7673; border-radius: 30px" class="text-white py-2 px-4 w-full">
+                Subscribe
+              </button>
+  
+              <p class="text-xs mt-2">
+                <a class="text-blu-200 underline-none hover:underline cursor-pointer">Click here to see our Ts & Cs</a>
+                and our promise to protect your data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- navbar bottom   -->
+    <div class="navbar-bottom">
+      <div class="menu">
+        <i class="bi bi-list"></i>
+        <span>Menu</span>
+      </div>
+      <div class="search">
+        <i class="bi bi-search"></i>
+        <span>Search</span>
+      </div>
+      <div class="basket">
+        <i class="bi bi-basket2"></i>
+        <span>Basket</span>
+      </div>
+      <div class="home">
+        <i class="bi bi-house"></i>
+        <span>Wordery</span>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
