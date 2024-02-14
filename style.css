@@ -604,6 +604,9 @@
     width: 35% !important;
     display: flex;
   }
+  .menu {
+    margin-right: -30px !important;
+  }
 }
 @media (max-width: 360px) {
   .text-show-result {
@@ -618,7 +621,10 @@
     display: none !important;
   }
   .navbar-bottom {
-    display: flex;
+    display: flex !important;
+  }
+  .menu {
+    margin-right: -30px !important;
   }
   .category-title h5 {
     margin-left: 45px !important;
