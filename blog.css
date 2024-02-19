@@ -1,0 +1,113 @@
+.blog-container {
+  margin-left: 80px !important;
+  width: 90%;
+  height: auto;
+  padding: 0 50px 0 50px !important;
+}
+.blog-title h1 {
+  color: #1c7e8c;
+  font-size: clamp(2rem, 2.5vw, 2rem) !important;
+}
+
+.btn-blog {
+  background-color: #eaeaea !important;
+  width: 150px;
+  font-size: 12px;
+  word-spacing: 0px !important;
+}
+.btn-blog:hover {
+  background-color: #cecbcb !important;
+  box-shadow: -1px 6px 10px 0px rgba(0, 0, 0, 0.54);
+}
+.blog-card {
+  height: 355px !important;
+  width: 180px !important;
+  box-shadow: -1px 4px 8px 0px rgba(0, 0, 0, 0.54);
+  transition: 0.5s ease-in-out all;
+  position: relative;
+}
+.blog-card:hover {
+  transform: scale(1.1) !important;
+  transition: 0.5s ease-in-out all;
+}
+.blog-card img {
+  height: 170px !important;
+  width: 100% !important;
+}
+.blog-card-title {
+  color: #1c7e8c;
+}
+.blog-card-text {
+  font-size: 13px;
+}
+.blog-btn-card {
+  width: 80%;
+  background-color: #1e7b78 !important;
+  font-size: 13px !important;
+}
+.blog-btn-card:hover {
+  background-color: #106360 !important;
+}
+.blog-category-top {
+  background-color: #ffff;
+  font-size: 9px;
+  position: absolute;
+  padding: 5px 20px;
+  margin-left: 30px;
+}
+.blog-pagi {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-pagi i {
+  font-weight: bolder !important;
+}
+
+.blog-left-icon a,
+.blog-right-icon a {
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.bi-arrow-left,
+.bi-arrow-right {
+  font-size: 18px;
+  color: #333;
+}
+.bi-arrow-left,
+.blog-left-icon a {
+  color: rgb(134, 132, 132);
+}
+.bi-arrow-right,
+.blog-right-icon a {
+  color: #1c7e8c;
+}
+@media (max-width: 480px) {
+  .blog-container {
+    margin: 0 !important;
+    width: 100%;
+  }
+  .btn-blog {
+    display: none !important;
+  }
+  .blog-cards {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .blog-card {
+    width: 900px !important;
+    height: 400px !important;
+  }
+  .blog-card img {
+    height: 250px !important;
+  }
+  .blog-card button {
+    display: block !important;
+  }
+}
