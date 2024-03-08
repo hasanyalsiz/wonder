@@ -1,0 +1,112 @@
+.about-container {
+  margin-left: 80px !important;
+  width: 90%;
+  height: auto;
+  padding: 0 50px 0 50px;
+}
+.left-a-tag a:not(:nth-child(1)) {
+  text-decoration: none;
+  color: black;
+}
+.left-a-tag a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about-img-section img {
+  width: 100% !important;
+}
+.about-img-section {
+  position: relative;
+}
+.about-img-p {
+  position: absolute;
+  top: 13.3rem;
+  right: 8rem;
+  background-color: rgba(240, 248, 255, 0.863);
+  padding: 1rem;
+  height: 35rem;
+  width: 25rem;
+  overflow: scroll;
+}
+@media (max-width: 360px) {
+  .about-img-section img {
+    height: 19.5rem !important;
+    max-width: 20rem;
+    width: 1rem !important;
+    margin-left: -3rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .about-img-p {
+    font-size: 1rem;
+    margin-left: -10.7rem !important;
+    max-width: 8rem !important;
+  }
+  .ourstory {
+    width: 16rem;
+    margin-top: 1rem;
+  }
+  .about-header {
+    margin-bottom: -1rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  .ourstory p {
+    font-size: 0.9rem;
+  }
+  .left-a-tag {
+    width: 12rem;
+  }
+  .about-img-section img {
+    margin-top: 6.5rem;
+    height: 19.5rem;
+    width: 22rem !important;
+    margin-left: -1.5rem;
+  }
+
+  .about-img-p {
+    font-size: 1rem;
+    margin-left: -7.2rem;
+    max-width: 10rem !important;
+  }
+}
+@media (max-width: 768px) {
+  .about-container {
+    margin-left: 1rem !important;
+  }
+  .about-img-p {
+    width: 15rem !important;
+    left: 17.5rem !important;
+    margin-top: -3rem !important;
+    max-height: 19rem !important;
+  }
+  .about-img-p p {
+    font-size: 0.5rem !important;
+  }
+}
+@media (max-width: 900px) {
+  .about-img-p {
+    max-width: 15rem;
+    max-height: 19rem;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about-img-p {
+    height: 25rem !important;
+    top: 9.7rem !important;
+    right: 6rem;
+  }
+}
+@media (max-width: 1280px) {
+  .about-img-p {
+    top: 12.5rem;
+  }
+}

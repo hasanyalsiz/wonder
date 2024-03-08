@@ -25,7 +25,7 @@ class BookCover extends HTMLElement {
             background-size: cover;
             background-position: center;
             transform: rotateY(-17deg);
-            transition: 750ms ease;
+            transition: 1500ms ease;
             transform-style: preserve-3d;
             transform-origin: right;
             box-shadow: 1px 35px 20px rgba(0, 0, 0, .4);
