@@ -1,0 +1,21 @@
+.help-container {
+  margin-left: 80px !important;
+  width: 90%;
+  height: auto;
+  padding: 0 50px 0 50px;
+}
+
+.left-a-tag a:not(:nth-child(1)) {
+  text-decoration: none;
+  color: black;
+}
+.left-a-tag a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.index-a:hover {
+  text-decoration: underline !important;
+}
+ul {
+  list-style: none;
+}
