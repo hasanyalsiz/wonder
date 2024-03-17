@@ -640,6 +640,9 @@
   }
 }
 @media (max-width: 360px) {
+  body {
+    overflow-x: hidden;
+  }
   .text-show-result {
     margin-left: 35px !important;
   }
@@ -656,6 +659,13 @@
   }
   .menu {
     margin-right: -30px !important;
+  }
+  .ani-cards {
+    margin-left: -2.5rem;
+    width: 25rem;
+  }
+  .card-ani-title i {
+    display: none;
   }
   .category-title h5 {
     margin-left: 45px !important;
